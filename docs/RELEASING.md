@@ -33,6 +33,7 @@ make release-local REPOSITORY=xiaomiaiazhao-tech/disk-lens
 发布后用户可安装：
 
 ```bash
+brew tap xiaomiaiazhao-tech/tap
 brew install --cask xiaomiaiazhao-tech/tap/disk-lens
 ```
 

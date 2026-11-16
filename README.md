@@ -40,6 +40,7 @@
 通过 [本项目的 Homebrew Tap](https://github.com/xiaomiaiazhao-tech/homebrew-tap) 安装：
 
 ```bash
+brew tap xiaomiaiazhao-tech/tap
 brew install --cask xiaomiaiazhao-tech/tap/disk-lens
 brew upgrade --cask disk-lens
 brew uninstall --cask disk-lens
