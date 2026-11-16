@@ -1,4 +1,4 @@
-# Prepared locally; no public release exists until the maintainer publishes one.
+# Generated from the source template; validate URL and checksum before publishing.
 # Keep SHA-256 checks and normal Gatekeeper/quarantine behavior enabled.
 cask "disk-lens" do
   version "@VERSION@"

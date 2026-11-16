@@ -1,5 +1,5 @@
 PYTHON ?= python3
-REPOSITORY ?= YOUR_GITHUB/disk-lens
+REPOSITORY ?= xiaomiaiazhao-tech/disk-lens
 
 .PHONY: help test build dmg verify homebrew source release-local
 help:
