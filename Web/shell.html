@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="description" content="空间镜：在本机分析目录、大文件和重复文件，审核后移到废纸篓。"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>空间镜 · 本机磁盘分析</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234267db'/%3E%3Ccircle cx='32' cy='32' r='18' stroke='white' stroke-width='5' fill='none'/%3E%3Ccircle cx='32' cy='32' r='6' fill='white'/%3E%3C/svg%3E"><style>__CSS__</style></head>
+<body>
+
+<div class="shell">
+ <aside class="sidebar" aria-label="侧边导航">
+  <div class="traffic" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="brand"><span class="brand-mark" id="brandIcon" aria-hidden="true"></span><div><strong>空间镜</strong><small>磁盘与文件管理</small></div></div>
+  <nav class="nav" id="navigation" aria-label="主要功能"></nav>
+  <div class="side-bottom"><div class="nav"><button id="settingsNav" data-action="nav" data-page="settings"><span id="settingsIcon" class="icon" aria-hidden="true"></span>设置</button></div><div class="side-disk"><div class="side-disk-title"><span class="icon small-icon" id="sideDiskIcon" aria-hidden="true"></span>Macintosh HD</div><div class="mini-bar"><i></i></div><p id="sideCapacity">正在读取磁盘容量</p></div></div>
+ </aside>
+ <div class="main-shell">
+  <header class="topbar"><div class="breadcrumbs"><span>此 Mac</span><span id="crumbArrow" aria-hidden="true"></span><strong id="crumbPage">磁盘总览</strong></div><div class="top-actions"><span class="prototype-tag">只在本机处理</span><button class="icon-button quiet" data-action="about" aria-label="使用说明" id="aboutButton"></button></div></header>
+  <main class="view" id="view" aria-label="主工作区"></main>
+  <footer class="statusbar"><div><i class="dot"></i><span id="liveStatus">正在连接本机扫描引擎</span></div><span id="statusSelection">未选择清理项目</span></footer>
+ </div>
+</div>
+<dialog id="modal" aria-labelledby="modalTitle"><div class="modal-head"><h2 id="modalTitle"></h2><button id="closeModal" class="icon-button quiet" aria-label="关闭弹窗"></button></div><div class="modal-body" id="modalBody"></div><div class="modal-footer" id="modalFooter"></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<script>const ICONS=__ICONS__;
+document.getElementById('brandIcon').innerHTML=ICONS['chart-pie-slice'];
+document.getElementById('settingsIcon').innerHTML=ICONS.gear;
+document.getElementById('sideDiskIcon').innerHTML=ICONS['hard-drives'];
+document.getElementById('crumbArrow').innerHTML=ICONS['caret-right'];
+document.getElementById('aboutButton').innerHTML=ICONS.question;
+document.getElementById('closeModal').innerHTML=ICONS.x;
+__JS__</script>
+</body></html>

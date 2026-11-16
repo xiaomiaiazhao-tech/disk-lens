@@ -1,0 +1,24 @@
+# Prepared locally; no public release exists until the maintainer publishes one.
+# Keep SHA-256 checks and normal Gatekeeper/quarantine behavior enabled.
+cask "disk-lens" do
+  version "@VERSION@"
+  sha256 "@SHA256@"
+
+  url "@URL@"
+  name "空间镜"
+  name "DiskLens"
+  desc "Local disk-space analysis and reviewed cleanup for macOS"
+  homepage "https://github.com/@REPOSITORY@"
+
+  depends_on macos: ">= :monterey"
+
+  app "空间镜.app"
+
+  caveats <<~EOS
+    This free community build is ad-hoc signed and NOT Apple-notarized.
+    Homebrew installs the app; it does not bypass macOS security checks.
+    After verifying the source and checksum, follow macOS Privacy & Security
+    prompts if the first launch is blocked. Do not disable Gatekeeper.
+    App settings, cleanup history and user files are retained on uninstall.
+  EOS
+end

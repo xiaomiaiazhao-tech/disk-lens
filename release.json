@@ -1,0 +1,11 @@
+{
+  "version": "0.5.2",
+  "build": 7,
+  "name": "空间镜",
+  "executable": "DiskLens",
+  "bundle_id": "local.disklens.cleaner",
+  "minimum_macos": "12.0",
+  "repository": "xiaomiaiazhao-tech/disk-lens",
+  "signing": "ad-hoc",
+  "notarized": false
+}
